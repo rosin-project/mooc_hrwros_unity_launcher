@@ -12,6 +12,10 @@ wget -q "https://raw.githubusercontent.com/rosin-project/mooc_hrwros_unity_launc
 wget -q "https://raw.githubusercontent.com/rosin-project/mooc_hrwros_unity_launcher/master/start-hrwros.desktop" -O  ${APPS_DIR}/start-hrwros.desktop
 wget -q "https://raw.githubusercontent.com/rosin-project/mooc_hrwros_unity_launcher/master/start-hrwros-nvidia.desktop" -O  ${APPS_DIR}/start-hrwros-nvidia.desktop
 
+# ugly, but will have to do for now
+sed -i "s|hrwros-mooc-icon.jpg|${HOME}/.local/share/icons/hrwros-mooc-icon.jpg|g" ${APPS_DIR}/start-hrwros.desktop
+sed -i "s|hrwros-mooc-icon.jpg|${HOME}/.local/share/icons/hrwros-mooc-icon.jpg|g" ${APPS_DIR}/start-hrwros-nvidia.desktop
+
 echo "Course command shell shortcut installed successfully"
 echo "To get started:"
 echo "1. Click on the Unity symbol on the top left corner of your screen"
