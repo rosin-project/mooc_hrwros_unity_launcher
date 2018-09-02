@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=HRWROS MOOC Environment
 Comment=Startup the environment for HRWROS
-Exec=gnome-terminal -e 'bash -c "singularity shell ${HOME}/hrwros_on_kinetic_v0.1.simg"'
+Exec=gnome-terminal -e 'bash -c "singularity shell ${HOME}/hrwros_kinetic_desktop_v0.3.simg"'
 Icon=hrwros-mooc-icon.jpg
 Terminal=true
 Categories=ROS;MOOC;HRWROS;
