@@ -1,6 +1,6 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=HRWROS MOOC Environment (non-NVIDIA)
+Name=HRWROS
 Comment=Startup the environment for HRWROS (non-NVIDIA computers).
 Exec=gnome-terminal -e 'bash -c "singularity shell -p ${HOME}/Downloads/hrwros-05.simg"' --class=hrwros_mooc_class
 Icon=hrwros-mooc-icon.jpg
