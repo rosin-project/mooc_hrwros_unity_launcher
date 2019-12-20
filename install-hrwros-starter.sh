@@ -8,10 +8,10 @@ mkdir -p ${APPS_DIR}
 
 echo "Installing the course command shell shortcut..."
 # Download the course icon to icons folder.
-wget -q "https://raw.githubusercontent.com/rosin-project/mooc_hrwros_unity_launcher/version_09/hrwros-mooc-icon.jpg" -O  ${ICONS_DIR}/hrwros-mooc-icon.jpg
-wget -q "https://raw.githubusercontent.com/rosin-project/mooc_hrwros_unity_launcher/version_09/hrwros-mooc-icon-nv.jpg" -O  ${ICONS_DIR}/hrwros-mooc-icon.jpg
-wget -q "https://raw.githubusercontent.com/rosin-project/mooc_hrwros_unity_launcher/version_09/start-hrwros.desktop" -O  ${APPS_DIR}/start-hrwros.desktop
-wget -q "https://raw.githubusercontent.com/rosin-project/mooc_hrwros_unity_launcher/version_09/start-hrwros-nvidia.desktop" -O  ${APPS_DIR}/start-hrwros-nvidia.desktop
+wget -q "https://raw.githubusercontent.com/marioney/mooc_hrwros_unity_launcher/version_09/hrwros-mooc-icon.jpg" -O  ${ICONS_DIR}/hrwros-mooc-icon.jpg
+wget -q "https://raw.githubusercontent.com/marioney/mooc_hrwros_unity_launcher/version_09/hrwros-mooc-icon-nv.jpg" -O  ${ICONS_DIR}/hrwros-mooc-icon-nv.jpg
+wget -q "https://raw.githubusercontent.com/marioney/mooc_hrwros_unity_launcher/version_09/start-hrwros.desktop" -O  ${APPS_DIR}/start-hrwros.desktop
+wget -q "https://raw.githubusercontent.com/marioney/mooc_hrwros_unity_launcher/version_09/start-hrwros-nvidia.desktop" -O  ${APPS_DIR}/start-hrwros-nvidia.desktop
 
 # For 18.04
 chmod +x ${APPS_DIR}/start-hrwros.desktop ${APPS_DIR}/start-hrwros-nvidia.desktop
