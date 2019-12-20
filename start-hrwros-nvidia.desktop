@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=HRWROS (NVIDIA)
 Comment=Startup the environment for HRWROS for computers with NVIDIA graphics cards.
-Exec=gnome-terminal -e '/bin/bash -c "/usr/bin/singularity shell -p --nv ${HOME}/Downloads/hrwros-05.simg"' --class=hrwros_mooc_class
+Exec=gnome-terminal -e '/bin/bash -c "/usr/bin/singularity shell -p --nv ${HOME}/Downloads/hrwros-09.simg"' --class=hrwros_mooc_class
 Icon=hrwros-mooc-icon.jpg
 Terminal=false
 Categories=ROS;MOOC;HRWROS;
