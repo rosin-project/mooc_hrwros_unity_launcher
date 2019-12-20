@@ -8,3 +8,8 @@ Terminal=false
 Categories=ROS;MOOC;HRWROS;
 Type=Application
 StartupWMClass=hrwros_mooc_class
+Actions=new-ccs
+[Desktop Action new-ccs]
+Name=New CCS
+Exec=gnome-terminal -e '/bin/bash -c "/usr/bin/singularity shell -p ${HOME}/Downloads/hrwros-09.simg"' --class=hrwros_mooc_class
+
