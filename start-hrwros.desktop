@@ -3,7 +3,7 @@ Encoding=UTF-8
 Name=HRWROS
 Comment=Startup the environment for HRWROS (non-NVIDIA computers).
 Exec=gnome-terminal -e '/bin/bash -c "/usr/bin/singularity shell -p ${HOME}/Downloads/hrwros-09.simg"' --class=hrwros_mooc_class
-Icon=hrwros-mooc-icon.jpg
+Icon=hrwros-mooc-icon.png
 Terminal=false
 Categories=ROS;MOOC;HRWROS;
 Type=Application
