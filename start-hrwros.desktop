@@ -3,7 +3,7 @@ Encoding=UTF-8
 Name=HRWROS
 Comment=Startup the environment for HRWROS (non-NVIDIA computers).
 Icon=hrwros-mooc-icon.png
-Exec=gnome-terminal -- bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity shell -p $(xdg-user-dir DOWNLOAD)/hrwros-09.simg" --class=hrwros_mooc_class
+Exec=gnome-terminal -- /bin/bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity shell -p $(xdg-user-dir DOWNLOAD)/hrwros-09.simg" --class=hrwros_mooc_class
 Terminal=false
 Categories=ROS;MOOC;HRWROS;
 Type=Application
