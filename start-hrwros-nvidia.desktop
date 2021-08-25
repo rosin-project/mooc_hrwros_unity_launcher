@@ -2,8 +2,8 @@
 Encoding=UTF-8
 Name=HRWROS (Nvidia)
 Comment=Startup the environment for HRWROS for computers with NVIDIA graphics cards.
-Exec=gnome-terminal -e '/bin/bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity shell -p --nv $(xdg-user-dir DOWNLOAD)/hrwros-09.simg"' --class=hrwros_mooc_class_nv
 Icon=hrwros-mooc-icon-nv.png
+Exec=gnome-terminal --class=hrwros_mooc_class_nv -- /bin/bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity shell -p --nv $(xdg-user-dir DOWNLOAD)/hrwros-09.simg"
 Terminal=false
 Categories=ROS;MOOC;HRWROS;
 Type=Application
@@ -11,4 +11,5 @@ StartupWMClass=hrwros_mooc_class_nv
 Actions=new-ccs
 [Desktop Action new-ccs]
 Name=New CCS (Nvidia)
-Exec=gnome-terminal -e '/bin/bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity shell -p --nv $(xdg-user-dir DOWNLOAD)/hrwros-09.simg"' --class=hrwros_mooc_class_nv
+Exec=gnome-terminal --class=hrwros_mooc_class_nv -- /bin/bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity shell -p --nv $(xdg-user-dir DOWNLOAD)/hrwros-09.simg"
+
