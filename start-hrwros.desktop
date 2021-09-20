@@ -3,7 +3,7 @@ Encoding=UTF-8
 Name=HRWROS
 Comment=Startup the environment for HRWROS (non-NVIDIA computers).
 Icon=hrwros-mooc-icon.png
-Exec=gnome-terminal --class=hrwros_mooc_class -- /bin/bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity shell -p $(xdg-user-dir DOWNLOAD)/hrwros-09.simg"
+Exec=gnome-terminal --class=hrwros_mooc_class -- /bin/bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity run -p $(xdg-user-dir DOWNLOAD)/hrwros-21.sif"
 Terminal=false
 Categories=ROS;MOOC;HRWROS;
 Type=Application
@@ -11,5 +11,5 @@ StartupWMClass=hrwros_mooc_class
 Actions=new-ccs
 [Desktop Action new-ccs]
 Name=New CCS
-Exec=gnome-terminal --class=hrwros_mooc_class -- /bin/bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity shell -p $(xdg-user-dir DOWNLOAD)/hrwros-09.simg"
+Exec=gnome-terminal --class=hrwros_mooc_class -- /bin/bash -c "/bin/mkdir -p /tmp/hrwros_run/dconf && XDG_RUNTIME_DIR=/tmp/hrwros_run /usr/bin/singularity run -p $(xdg-user-dir DOWNLOAD)/hrwros-21.sif"
 
