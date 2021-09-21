@@ -15,13 +15,13 @@ wget -q "https://raw.githubusercontent.com/rosin-project/mooc_hrwros_unity_launc
 
 
 # For 18.04
-chmod +x ${APPS_DIR}/start-hrwros.desktop ${APPS_DIR}/start-hrwros-nvidia.desktop
+#chmod +x ${APPS_DIR}/start-hrwros.desktop ${APPS_DIR}/start-hrwros-nvidia.desktop
 
 # ugly, but will have to do for now
-sed -i "s|Icon=hrwros-mooc-icon.png|Icon=${HOME}/.local/share/icons/hrwros-mooc-icon.png|g" ${APPS_DIR}/start-hrwros.desktop 
+#sed -i "s|Icon=hrwros-mooc-icon.png|Icon=${HOME}/.local/share/icons/hrwros-mooc-icon.png|g" ${APPS_DIR}/start-hrwros.desktop 
 
 # ugly, but will have to do for now
-sed -i "s|Icon=hrwros-mooc-icon-nv.png|Icon=${HOME}/.local/share/icons/hrwros-mooc-icon-nv.png|g" ${APPS_DIR}/start-hrwros-nvidia.desktop
+#sed -i "s|Icon=hrwros-mooc-icon-nv.png|Icon=${HOME}/.local/share/icons/hrwros-mooc-icon-nv.png|g" ${APPS_DIR}/start-hrwros-nvidia.desktop
 
 
 echo "Course command shell shortcut installed successfully"
